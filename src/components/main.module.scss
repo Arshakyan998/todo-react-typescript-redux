@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap");
+
+$font:55px;
+
+.main {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &_content {
+    width: 1000px;
+    height:700px;
+    border: 2px solid green;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    &_sidebar {
+      padding: 2px;
+      flex: 1;
+
+      div {
+        cursor: pointer;
+        margin-top: 5px;
+        align-items: center;
+        padding-left: 3px;
+        display: flex;
+        font-family: "Bonheur Royale", cursive;
+        font-size: $font;
+        justify-content: space-between;
+        padding: 5px;
+
+        div {
+          align-items: center;
+        }
+      }
+    }
+
+    &_text {
+      flex: 2;
+      text-align: center;  
+      position: relative;
+      padding: 10px;
+    
+     
+
+      div:not(:first-child) {
+       margin: 2px auto;
+        max-height: 400px;
+       
+        padding: 15px;
+        font-family: "Bonheur Royale", cursive;
+        font-weight: bold;
+        font-size:35px;
+        align-items: center;   
+        margin-top: 20px;   
+
+        div {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row;
+        }
+      }
+     
+    }
+  }
+}
+
+.change_block{
+  position: absolute;
+  top:55px;
+  left:44px;
+  width: 220px;
+}

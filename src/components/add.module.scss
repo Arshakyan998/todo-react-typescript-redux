@@ -1,0 +1,23 @@
+.input_block {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  display: flex;
+  transition: all 0.5s linear;
+  padding: 0px !important;
+
+  > input {
+    width: inherit;
+    border: none;
+    background: none;
+    font-size: 45px;
+    outline: none;
+    align-items: center;
+  }
+  > button {
+    height: 84px;
+    border: 1px solid teal;
+    width: 45px;
+  }
+}
