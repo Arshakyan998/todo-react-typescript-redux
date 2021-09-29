@@ -18,15 +18,16 @@ export const DrowText: React.FC = (): React.ReactElement => {
 
   const { todo, currentTodoid } = useSelectorTS((state) => state.list);
 
-  const itemLength=todo.reduce((aggr,val)=>val.todos.length+aggr,0)
-   
+  const itemLength=todo.reduce((aggr,val)=>val.name.length+aggr,0)
+
+
+    
+  
   React.useMemo(() => {
     if (currentTodoid) {
       const result = todo.find((el) => el.id === currentTodoid);
           
      setCurrentTodo(result);
-
-            
     }else{
       setCurrentTodo(undefined)
     }
